@@ -1,0 +1,1009 @@
+:root{
+    --main-color: #19c8fa;
+    --sub-color: rgb(15 116 143 / 70%)
+} 
+html {
+    scroll-behavior: smooth;
+}
+* {
+    font-family: "Open Sans", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+/*Start main_page */
+.main {
+    width: 100%;
+    height: 660px;
+    position: relative;
+    background-image: url("../img/kajetan-sumila-qt3zf0VZwP8-unsplash.jpg") ;
+    background-size: cover;
+}
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+.content_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right:100px ;
+    position: relative;
+}
+.content_header::before{
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    right: 0px;
+    top:85%;
+    z-index: 1;
+}
+.content_header img{
+    padding: 30px;
+}
+.links{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+.content_header .search::after{
+    content: "";
+    width: 0px;
+    height: 130%;
+    border: 1px solid white;
+    position: absolute;
+    top: -5px;
+    right: 35px;
+}
+.content_header .navicon{
+    display: none;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+.links li{
+    padding: 10px;
+    position: relative;
+}
+.content_header i{
+    position: relative;
+        padding-left: 30px;
+}
+.links li::after{
+    content: ""; 
+    width: calc( 100% - 10px);
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 1px;
+    z-index: 2;
+}
+.links .active1::after{
+    background-color: var(--main-color);
+}
+.links .active1{
+    color: var(--main-color);
+}
+.links a:hover {
+    color: var(--main-color);
+}
+.links li:hover::after{
+    background-color: var(--main-color);
+}
+.content_write {
+    color:white;
+    background-color: var(--sub-color);
+    width: 40%;
+    position: relative;
+    top:15%;
+    padding: 50px;
+    letter-spacing: .2px;
+    line-height: 1.5;
+    padding-left: 100px;
+}
+.content_write p{
+    padding-top: 20px ;
+}
+.content_write h1{
+    font-weight: 100;
+}
+.direction {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -15%;
+    padding: 25px;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: relative;
+    top: 18%;
+    left: 50%;
+}
+.circle::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    position: absolute;
+    top: 0%;
+    left: 150%;
+}
+.circle::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    position: absolute;
+    top: 0%;
+    left: -150%;
+}
+/* End main_page */
+/* Start Page_two:services */
+.services{
+    margin-top: 100px ;
+    margin-bottom: 100px;
+}
+.main_ser h1 {
+    font-weight: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+}
+.main_ser h1::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.main_ser h1::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.main_ser p{
+    text-align: center;
+    margin: 0 auto 100px;
+    width: 550px;
+    max-width: 100%;
+    color: #777;
+}
+.services .total_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+    padding: 0px 100px;
+}
+.services .total_content .content1{
+    display: flex;
+    column-gap: 30px;
+}
+.services .total_content .content1 .text h2{
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.services .total_content .content1 .text p{
+    color:#777
+}
+/* End Page_two:services */
+/* Start Page_three */
+.page_three {
+    /* margin-bottom: 100px; */
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-image: url("../img/ai-solutions-neural-networks.jpg");
+    background-size:cover ;
+}
+.page_three img{
+    position: absolute;
+    left: 100px;
+    bottom: -60px;
+}
+.page_three .content2{
+    background-color: var(--sub-color);
+    color:white;
+    padding: 60px 100px 60px 50px;
+    width: 40%;
+    position: absolute;
+    top:50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+.page_three .content2 h3{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.page_three .content2 .list ul li{
+    list-style: none;
+    padding: 15px 0px ;
+}
+.page_three .content2 .list ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 25px;
+}
+/* End page_three  */
+/* Start page_Four  */
+.page_four {
+    background-color: white;
+    padding: 100px 0px;
+    width: 100%;
+    position: relative;
+}
+.page_four .list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.page_four .list ul li{
+    margin-left: 10px ;
+    padding: 10px;
+}
+.active {
+    background-color: var(--main-color);
+    color: white;
+}
+.page_four .image{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.page_four .image .box{
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+.text_box{
+    /* display: none; */
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: .3s;
+    bottom: -100%;
+}
+.page_four .image img{
+    max-width: 100%;
+    transition: 0.3s;
+}
+.page_four .image .box:hover  .text_box{
+    bottom: 0;
+}
+.page_four .image .box:hover  img{
+    transform: rotate(3deg) scale(1.1);
+}
+.page_four a{
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 30px auto;
+    display: block;
+    width: fit-content;
+}
+/* End page_Four */
+/* Start page_Five */
+.page_five{
+    position: relative;
+}
+.video {
+position: relative;
+}
+.video::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+}
+video{
+    width: 100%;
+}
+.page_five .text_content{
+    background-color: var(--sub-color);
+    color:white;
+    width: 100%;
+    padding: 40px 0px;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.page_five .text_content h2,.page_five .text_content p{
+    text-transform: uppercase;
+    padding-bottom: 25px ;
+    font-weight: 100;
+}
+.page_five .text_content button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+/* End page_Five */
+/* Start page_six */
+.page_six{
+    margin-top: 100px ;
+    position: relative;
+}
+.page_six .image {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.page_six .image img{
+    width: 100%;
+}
+.content_number{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin-top: 320px;
+    background-image: url("../img/icarus-chu-AQ3E35mmsoY-unsplash.jpg");
+    background-size: cover;
+}
+.number{
+    background-color: var(--sub-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+    width: 80%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content_number .number .bulk{
+    text-align: center;
+    color: white;
+}
+.content_number .number .bulk i{
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.content_number .number .bulk h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+/* End page_six */
+/* Start Page_Seven */
+.page_seven{
+    padding-top: 100px;
+    display: flex;
+
+    grid-gap: 100px;
+    padding: 100px 20px;
+}
+.content_one{
+    text-align: center;
+    padding:0px 50px 50px 50px;
+}
+.content_one h3{
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.content_one p{
+    color:#777;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+.first_content .content_two{
+    display: flex;
+}
+.first_content .content_two img{
+    margin: 25px 50px 25px 30px;
+    border-radius: 50%;
+}
+.first_content .content_two .text{
+    margin: 30px 40px 30px 0px;
+    position: relative;
+    width: 60%;
+}
+.first_content .content_two .text::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #b1b1b1;
+    position: absolute;
+    top: 120%;
+}
+.first_content .content_two .text p{
+    line-height: 1.5;
+    letter-spacing: .5px;
+    padding-bottom: 10px;
+}
+.first_content .content_two .text h5{
+    font-weight: 100;
+    font-size: 15px;
+    color:#777;
+    display: flex;
+    justify-content: flex-end;
+}
+.first_content .three_circle{
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    margin: 40px auto;
+    position: relative;
+}
+.first_content .three_circle::before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border: #777 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top:0%;
+    left: 30px;
+}
+.first_content .three_circle::after{
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border: #777 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top:0%;
+    left: -30px;
+}
+.second_content .content_two {
+    position: relative;
+}
+.second_content .content_two p{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+.second_content .content_two h5{
+    background-color: black;
+    color: white;
+    font-weight:100 ;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: -20%;
+    left: 77%;
+}
+.second_content .content_two .h85{
+    left: 72%;
+}
+.second_content .content_two .h80{
+    left: 68%;
+}
+.second_content .content_two h5::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.second_content .content_two div{
+    width: 90%;
+    height: 35px;
+    background-color: #EEE;
+    position: relative;
+}
+.second_content .content_two div::after{
+    content: "";
+    width: 90%;
+    height: 35px;
+    background-color: var(--main-color);
+    position: absolute;
+}
+.second_content .content_two .div85::after{
+    width: 85%;
+}
+.second_content .content_two .div80::after{
+    width: 80%;
+}
+.alone_div{
+    background-image: url("../img/marek-piwnicki-58i_qv-unsI-unsplash.jpg");
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.alone_div .text_content{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top:40%;
+    left: 10%;
+}
+.text_content h3{
+    font-weight: 100;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+/* End Page_Seven */
+/* Start page_eight */
+.menu_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.menu_content .menu{
+    background-color: #fcfcfc;
+    margin: 20px 0px ;
+}
+.menu_content .menu .main_menu{
+    padding: 40px 70px;
+    border-top: var(--main-color) 1px solid;
+    border-bottom: var(--main-color) 1px solid;
+}
+.menu_content .menu .main_menu h4{
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.menu_content .menu .main_menu h1{
+    position: relative;
+    font-weight: normal;
+}
+.menu_content .menu .main_menu span{
+    padding: 10px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.menu_content .menu .main_menu sup{
+    position: absolute;
+    top: 10px;
+    left: -15px;
+}
+.menu_content .menu ul{
+    border-bottom: var(--main-color) 1px solid;
+}
+.menu_content .menu ul li{
+    padding: 20px;
+    list-style: none;
+    text-transform: capitalize;
+    position: relative;
+}
+.menu_content .menu ul li:not(li:last-of-type)::after{
+    content: "";
+    width: 50%;
+    border-bottom: var(--main-color) 1px solid;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.menu_content .menu button{
+    padding: 20px;
+    margin: 30px;
+    text-transform: capitalize;
+    background-color: #fcfcfc;
+    color:#801d80;
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+}
+.menu_content .menu button:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.list_content {
+    padding: 50px;
+    text-align: center;
+}
+.list_content p{
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+.list_content a{
+    padding: 15px 20px;
+    margin: 30px;
+    text-transform: capitalize;
+    background-color: var(--main-color);
+    color:white;
+    text-decoration: none;
+}
+/* End page_eight */
+.content_email{
+    background-image: url("../img/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-size:cover ;
+    height: 300px;
+    margin-top:100px ;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content_email .text_email {
+    border: 2px solid white;
+    padding-left: 20px;
+    display: flex;
+}
+.content_email .text_email i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.content_email .text_email input{
+    background: none;
+    border: none;
+    padding-left:5px ;
+    outline: none;
+    color: white;
+    padding: 20px;
+}
+.content_email .text_email input::placeholder{
+    color: white;
+}
+.content_email .text_email button{
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.content_email .text_p{
+    color: white;
+    padding: 40px;
+    width: 50%;
+}
+/* Start page_ten */
+.content_ten{
+    display: flex;
+    justify-content: space-around;
+}
+.content_ten form{
+    width: 100%;
+    margin-left: 20px;
+}
+.content_ten form input,.content_ten form textarea{
+        padding: 20px;
+        display: block;
+        border: 1px solid #ccc;
+        margin-bottom: 30px;
+        width: 100%;
+        outline: none;
+}
+.page_ten .button_div{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 40px;
+    position: relative;
+}
+.page_ten button{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    right: -40px;
+    cursor: pointer;
+}
+.main_text{
+    width: 50%;
+    margin-left: 100px;
+}
+.main_text .sub_text{
+    margin-bottom: 100px;
+}
+.main_text .sub_text h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.main_text  .sub_text p{
+    color: #777;
+    line-height: 2;
+    text-transform: capitalize;
+}
+/* End page_ten */
+/* last page */
+.last_page{
+    position: relative;
+    background-image: url("../img/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-size:cover ;
+    height: 400px;
+    margin-top: 100px ;
+    text-align: center;
+    color:white;
+}
+.last_page img{
+    position: relative;
+    padding: 50px;
+}
+.last_page h3{
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
+}
+.last_page h3::after{
+    content: "";
+    width: 20%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top:100%
+}
+.last_page .social i{
+    margin: 40px 20px;
+    position: relative;
+}
+.last_page p{
+    position: relative;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+.last_page p span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+/* in_Mobile */
+@media (max-width: 768px) {
+    /* Start main_page */
+    .content_header{
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 20px ;
+    }
+    .content_write{
+        width: 83%;
+        position: relative;
+        top: 10%;
+        padding: 5px;
+        letter-spacing: .2px;
+        line-height: 1.5;
+        padding: 10px 14px 10px 50px;
+    }
+    .direction{
+        display: none;
+    }
+    .links ul{
+        display: none; 
+    }
+    .links li::after{
+        width: 100%;
+        top: 41.5px;
+        display: none;
+    }
+    .links{
+        width: 100%;
+        position: absolute;
+        top: 85%;
+        left: 0px;
+    }
+    .content_header .navicon{
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .content_header .navicon:hover + .links ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(0 0 0 / 50%);
+        z-index: 5;
+    }
+    .content_header .navicon:hover  .links li::after{
+        display: block;
+        color : var(--main-color);
+    }
+    /* .content_header .navicon:hover  .links li::before{
+            content: "";
+            width: 0px;
+            height: 0px;
+            border: 15px solid;
+            border-color: transparent transparent rgb(0 0 0 / 50%) transparent ;
+            position: absolute;
+            top: -30px;
+            right: 85px;
+        } */
+        .circle{
+            top: 26%;
+        }
+        /* End main_page */
+        /* Start Page_Two */
+        .services .total_content{
+            display: block;
+            padding: 10px;
+        }
+        .services .total_content .content1{
+            flex-wrap: wrap;
+            text-align: center;
+            margin-bottom: 50px ;
+        }
+        .services .total_content .content1 i{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        /* End Page_Two */
+        /* Start Page_Three */
+        .page_three img{
+            display: none;
+        }
+        .page_three .content2{
+            width: 100%;
+            padding: 0px;
+        }
+        .page_three .content2 .list, .page_three .content2 h3{
+            padding: 25px;
+        }
+        /* End Page_Three */
+        /* Start Page_Four */
+        .page_four .image .box{
+            width: 100%;
+        }
+        /* End Page_Four */
+        /* Start page_six */
+        .content_number{
+            margin-top: 220px;
+            height: 1100px;
+        }
+        .number{
+            padding: 0px;
+        }
+        .page_six .image {
+            width: 100%;
+            top: 279px;
+            left: 176px;
+        }
+        .content_number .number .bulk{
+            width: 100%;
+            padding: 30px;
+        }
+        /* End page_six */
+        /* Start page_seven */
+        .page_seven{
+            display: block;
+        }
+        .page_seven .first_content .content_two{
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .page_seven .first_content .content_two .text{
+            width: 100%;
+            margin-top: 0px;
+        }
+        .first_content .content_two .text::after{
+            left: 0px;
+        }
+        .content_one{
+            padding: 0px;
+        }
+        .second_content{
+            margin-top: 100px;
+        }
+        .second_content .content_two div{
+            width: 100%;
+        }
+        .second_content .content_two h5{
+            left: 84%;
+        }
+        .second_content .content_two .h85{
+            left: 79%;
+        }
+        .second_content .content_two .h80{
+            left: 74%;
+        }
+         /* End page_seven */
+        .alone_div .text_content {
+            top: 32%;
+            left: 0%
+        }
+        /* Start page_eight */
+        .menu_content .menu {
+            width: 90%;
+        }
+        .menu_content .menu .main_menu sup{
+            left: 15px;
+        }
+        /* End page_eight */
+        .content_email{
+            height: 300px;
+        }
+        .content_email .text_email{
+            width: 90%;
+            padding: 0px;
+            margin-top: 50px;
+        }
+        .content_email .text_email input{
+            padding: 0px;
+        }
+        .content_email .text_email button{
+            padding: 20px 18px;
+        }
+        .content_email .text_p{
+            width: 100%;
+            padding: 15px;
+        }
+        /* Start page_ten */
+        .content_ten{
+            display: block;
+        }
+        .content_ten form{
+            width: 80%;
+            margin-left: 15px;
+        }
+        .page_ten .button_div {
+            right: -20%;
+            transform: translate(-50%);
+        }
+        .main_text .sub_text{
+            margin-bottom: 30px;
+        }
+        .main_text{
+            margin-top: 100px;
+        }
+        /* End page_ten */
+    }
